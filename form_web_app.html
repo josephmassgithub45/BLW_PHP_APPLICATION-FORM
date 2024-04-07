@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Link to Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <img src="mlogo.png" style="width: 4rem;" alt="Ministry Logo">
+        <header class="text-lg font-semibold">Ministry of Planning and Economic Development</header>
+
+        <form>
+            <section class="form first">
+                <div class="details personal mt-4">
+                    <span class="title font-semibold">Personal Details</span>
+
+                    <div class="fields grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+
+                        <div class="input-field">
+                            <label for="fullName" class="block text-sm font-medium text-gray-700">Applicant Full Name:</label>
+                            <input id="fullName" type="text" placeholder="Enter your name" autofocus required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="dob" class="block text-sm font-medium text-gray-700">Date of Birth</label>
+                            <input id="dob" type="date" placeholder="Enter birth date" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="email" class="block text-sm font-medium text-gray-700">Personal Email</label>
+                            <input id="email" type="email" placeholder="Enter your email" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="mobile" class="block text-sm font-medium text-gray-700">Mobile Number</label>
+                            <input id="mobile" type="tel" placeholder="Enter your mobile" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="genders" class="block text-sm font-medium text-gray-700">Gender</label>
+                            <select id="genders" name="genders" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="nationality" class="block text-sm font-medium text-gray-700">Nationality</label>
+                            <input id="nationality" type="text" placeholder="Enter your nationality" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID mt-4">
+                    <span class="title font-semibold">Identification Details</span>
+
+                    <div class="fields grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+
+                        <div class="input-field">
+                            <label for="idType" class="block text-sm font-medium text-gray-700">ID Type</label>
+                            <input id="idType" type="text" placeholder="Enter ID type" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="idNumber" class="block text-sm font-medium text-gray-700">ID Number</label>
+                            <input id="idNumber" type="text" placeholder="Enter ID number" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="issuedAuthority" class="block text-sm font-medium text-gray-700">Issued Authority</label>
+                            <input id="issuedAuthority" type="text" placeholder="Enter issued authority" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="issuedState" class="block text-sm font-medium text-gray-700">Issued State</label>
+                            <input id="issuedState" type="text" placeholder="Enter issued state" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="issuedDate" class="block text-sm font-medium text-gray-700">Issued Date</label>
+                            <input id="issuedDate" type="date" placeholder="Enter birth date" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="expiryDate" class="block text-sm font-medium text-gray-700">Expiry Date</label>
+                            <input id="expiryDate" type="date" placeholder="Enter expiry date" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+                    </div>
+
+                    <span class="title font-semibold mt-4">Organizational Details</span>
+
+                    <div class="fields grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+
+                        <div class="input-field">
+                            <label for="orgName" class="block text-sm font-medium text-gray-700">Organization Name</label>
+                            <input id="orgName" type="text" placeholder="Enter organization name" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="officeAddress" class="block text-sm font-medium text-gray-700">Head Office Address</label>
+                            <input id="officeAddress" type="text" placeholder="Enter head office address" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="regNumber" class="block text-sm font-medium text-gray-700">Registration Number</label>
+                            <input id="regNumber" type="text" placeholder="Enter registration number" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="regDate" class="block text-sm font-medium text-gray-700">Date of Registration or Last Renewal</label>
+                            <input id="regDate" type="date" placeholder="Enter registration date" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details address mt-4">
+                    <span class="title font-semibold">Address Details</span>
+
+                    <div class="fields grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+
+                        <div class="input-field">
+                            <label for="addressType" class="block text-sm font-medium text-gray-700">Address Type</label>
+                            <input id="addressType" type="text" placeholder="Enter address type" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="state" class="block text-sm font-medium text-gray-700">State</label>
+                            <input id="state" type="text" placeholder="Enter your state" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="district" class="block text-sm font-medium text-gray-700">District</label>
+                            <input id="district" type="text" placeholder="Enter district" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="blockNumber" class="block text-sm font-medium text-gray-700">Block Number</label>
+                            <input id="blockNumber" type="text" placeholder="Enter block number" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="wordNumber" class="block text-sm font-medium text-gray-700">Word Number</label>
+                            <input id="wordNumber" type="text" placeholder="Enter word number" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details family mt-4">
+                    <span class="title font-semibold">Family Details</span>
+
+                    <div class="fields grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+
+                        <div class="input-field">
+                            <label for="fatherName" class="block text-sm font-medium text-gray-700">Father's Name</label>
+                            <input id="fatherName" type="text" placeholder="Enter father's name" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="motherName" class="block text-sm font-medium text-gray-700">Mother's Name</label>
+                            <input id="motherName" type="text" placeholder="Enter mother's name" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="grandfatherName" class="block text-sm font-medium text-gray-700">Grandfather's Name</label>
+                            <input id="grandfatherName" type="text" placeholder="Enter grandfather's name" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="spouseName" class="block text-sm font-medium text-gray-700">Spouse Name</label>
+                            <input id="spouseName" type="text" placeholder="Enter spouse name" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="fatherInLaw" class="block text-sm font-medium text-gray-700">Father in-law</label>
+                            <input id="fatherInLaw" type="text" placeholder="Enter father in-law" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+
+                        <div class="input-field">
+                            <label for="motherInLaw" class="block text-sm font-medium text-gray-700">Mother in-law</label>
+                            <input id="motherInLaw" type="text" placeholder="Enter mother in-law" required class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+                    </div>
+                    <section class="form additional mt-4">
+                        <span class="title font-semibold">Status:</span><br />
+                        <br />
+                        <label for="html">National Non-Governmental Organization?</label><br />
+                        <input type="radio" id="css1" name="fav_language1" value="CSS" />
+                        <label for="css1">Yes</label><br />
+                        <input type="radio" id="javascript1" name="fav_language1" value="JavaScript" />
+                        <label for="javascript1">No</label><br />
+                        <br />
+
+                        <label for="html">International Non-Non-Governmental Organization?</label><br />
+                        <input type="radio" id="css2" name="fav_language2" value="CSS" />
+                        <label for="css2">Yes</label><br />
+                        <input type="radio" id="javascript2" name="fav_language2" value="JavaScript" />
+                        <label for="javascript2">No</label><br />
+                        <br />
+                    </section>
+                    <!-- Additional section 2 -->
+                    <div class="details personal ID mt-4">
+                        <span class="title">Name and Address of Country of Origin (If International)</span>
+
+                        <div class="field grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+                            <div class="input-field">
+                                <label for="#" class="block text-sm font-medium text-gray-700">Name of the Country:</label>
+                                <input type="text" placeholder="Enter the name of the country" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="#" class="block text-sm font-medium text-gray-700">City / State:</label>
+                                <input type="text" placeholder="Enter your ID Number" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="#" class="block text-sm font-medium text-gray-700">Address:</label>
+                                <input type="text" placeholder="Enter the office address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="#" class="block text-sm font-medium text-gray-700">Mobile Number:</label>
+                                <input type="number" placeholder="Enter mobile number" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="#" class="block text-sm font-medium text-gray-700">Email:</label>
+                                <input type="text" placeholder="Enter email address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="#" class="block text-sm font-medium text-gray-700">State Number of Sub-Office (if any):</label>
+                                <input type="number" placeholder="Enter the number of sub-office" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional section 3 -->
+                    <div class="details organization mt-4">
+                        <span class="title">No. of Vehicles | Motor Bikes | Sea Transport</span>
+
+                        <div class="field grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+                            <div class="input-field">
+                                <label for="#" class="block text-sm font-medium text-gray-700">Vehicles:</label>
+                                <input type="number" placeholder="Enter number of vehicles" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="#" class="block text-sm font-medium text-gray-700">Motor Bike:</label>
+                                <input type="number" placeholder="Enter number of bikes" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+
+                            <div class="input-field">
+                                <label for="#" class="block text-sm font-medium text-gray-700">Sea Transport:</label>
+                                <input type="number" placeholder="Enter sea transport" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of additional section 3 -->
+
+                    <!-- Additional section 4 -->
+                    <div class="details organization mt-4">
+                        <span class="title">Financial Status</span>
+
+                        <div class="field grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+                            <div class="input-field">
+                                <label for="income" class="block text-sm font-medium text-gray-700">Did you generate income from activities last year?</label><br />
+                                <input type="radio" id="yesIncome" name="income" value="true" />
+                                <label for="yesIncome">Yes</label><br />
+                                <input type="radio" id="noIncome" name="income" value="false" />
+                                <label for="noIncome">No</label><br />
+                            </div>
+
+                            <div class="input-field">
+                                <label for="account" class="block text-sm font-medium text-gray-700">Is your account up to date?</label><br />
+                                <input type="radio" id="yesAccount" name="account" value="true" />
+                                <label for="yesAccount">Yes</label><br />
+                                <input type="radio" id="noAccount" name="account" value="false" />
+                                <label for="noAccount">No</label><br />
+                            </div>
+
+                            <div class="input-field">
+                                <label for="taxLiabilities" class="block text-sm font-medium text-gray-700">Are your tax liabilities fully paid to the Government?</label><br />
+                                <input type="radio" id="yesTax" name="taxLiabilities" value="true" />
+                                <label for="yesTax">Yes</label><br />
+                                <input type="radio" id="noTax" name="taxLiabilities" value="false" />
+                                <label for="noTax">No</label><br />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of additional section 4 -->
+                    <!-- Additional section 5 -->
+                    <div class="details organization mt-4">
+                        <span class="title">Summary of Projects Implemented Last (12) Months:</span>
+
+                        <div class="field grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Project Implemented:</label>
+                                <input type="number" placeholder="Enter number of projects implemented" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Select a file:</label>
+                                <input type="file" id="myfile" name="myfile" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3"><br><br>
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">District:</label>
+                                <input type="text" placeholder="Enter district" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Chiefdom:</label>
+                                <input type="text" placeholder="Enter chiefdom" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Town/Village:</label>
+                                <input type="text" placeholder="Enter town or village" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Ward:</label>
+                                <input type="text" placeholder="Enter ward" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Activities 1:</label>
+                                <input type="text" placeholder="Enter activities" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of additional section 5 -->
+
+                    <!-- Additional section 6 -->
+                    <div class="details organization mt-4">
+                        <span class="title">Donor Received for the last (12) Months:</span>
+
+                        <div class="field grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Name of Donor:</label>
+                                <input type="text" placeholder="Enter donor name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Amount:</label>
+                                <input type="number" placeholder="Enter amount" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Project Fund:</label>
+                                <input type="text" placeholder="Enter project funded" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Donor:</label>
+                                <input type="text" placeholder="Enter donor" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Amount:</label>
+                                <input type="number" placeholder="Enter amount" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Project Fund:</label>
+                                <input type="text" placeholder="Enter project funded" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of additional section 6 -->
+                    <!-- Additional section 7 -->
+                    <div class="details organization mt-4">
+                        <span class="title">Donor funds expected in the last (12) Months:</span>
+
+                        <div class="field grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Name of Donor:</label>
+                                <input type="number" placeholder="Enter donor name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Amount:</label>
+                                <input type="number" placeholder="Enter amount" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Project(s):</label>
+                                <input type="text" placeholder="Enter project name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field"></div>
+                            <div class="input-field"></div>
+                            <div class="input-field"></div>
+                        </div>
+                    </div>
+                    <!-- End of additional section 7 -->
+
+                    <!-- Additional section 8 -->
+                    <div class="details organization mt-4">
+                        <span class="title">Beneficiaries of Project(s) implemented last (12) Months:</span>
+
+                        <div class="field grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Categories:</label>
+                                <input type="number" placeholder="Enter categories" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Location: District:</label> <label class="block text-sm font-medium text-gray-700"></label>
+                                <input type="text" placeholder="Enter district name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Chiefdom:</label>
+                                <input type="text" placeholder="Enter chiefdom name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Town / Village:</label>
+                                <input type="text" placeholder="Enter town/village name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Ward:</label>
+                                <input type="number" placeholder="Enter ward" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Estimated Number of Beneficiaries:</label>
+                                <input type="number" placeholder="Enter number of beneficiaries" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of additional section 8 -->
+
+                    <!-- Additional section 9 -->
+                    <div class="details organization mt-4">
+                        <span class="title">Sectors of Operation:</span>
+
+                        <div class="field grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Sectors: Previous (2022-2023):</label> <label class="block text-sm font-medium text-gray-700"></label>
+                                <input type="number" placeholder="Enter previous operation" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Current (2024-2025):</label>
+                                <input type="number" placeholder="Enter current operation" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Operational Area: District:</label> <label class="block text-sm font-medium text-gray-700"></label>
+                                <input type="text" placeholder="Enter operational district name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Chiefdom:</label>
+                                <input type="text" placeholder="Enter chiefdom name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Town / Village:</label>
+                                <input type="number" placeholder="Enter town/village name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Ward:</label>
+                                <input type="number" placeholder="Enter ward" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of additional section 9 -->
+                    <!-- Additional section 10 -->
+                    <div class="details organization mt-4">
+                        <span class="title">Transaction Details:</span>
+
+                        <div class="field grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Bankers:</label>
+                                <input type="number" placeholder="Enter official bank account" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Type (FD|S|C):</label>
+                                <input type="text" placeholder="Enter type" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700">Bankers (L|F):</label>
+                                <input type="text" placeholder="Enter bankers L/F" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700"></label>
+                                <input type="text" placeholder="Enter additional details" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700"></label>
+                                <input type="number" placeholder="Enter additional details" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                            <div class="input-field">
+                                <label class="block text-sm font-medium text-gray-700"></label>
+                                <input type="number" placeholder="Enter additional details" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of additional section 10 -->
+
+                    <!-- Radio buttons -->
+                    <div class="field grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+                        <div>
+                            <label for="html">1. FD - Fixed Deposit?</label><br />
+                            <input type="radio" id="css3" name="fav_language3" value="CSS" />
+                            <label for="css3">Yes</label><br />
+                            <input type="radio" id="javascript3" name="fav_language3" value="JavaScript" />
+                            <label for="javascript3">No</label><br />
+                        </div>
+                        <div>
+                            <label for="html">2. S - Savings?</label><br />
+                            <input type="radio" id="css4" name="fav_language4" value="CSS" />
+                            <label for="css4">Yes</label><br />
+                            <input type="radio" id="javascript4" name="fav_language4" value="JavaScript" />
+                            <label for="javascript4">No</label><br />
+                        </div>
+                        <div>
+                            <label for="html">3. C - Current?</label><br />
+                            <input type="radio" id="css5" name="fav_language5" value="CSS" />
+                            <label for="css5">Yes</label><br />
+                            <input type="radio" id="javascript5" name="fav_language5" value="JavaScript" />
+                            <label for="javascript5">No</label><br />
+                        </div>
+                        <div>
+                            <label for="html">4. L - Local?</label><br />
+                            <input type="radio" id="css6" name="fav_language6" value="CSS" />
+                            <label for="css6">Yes</label><br />
+                            <input type="radio" id="javascript6" name="fav_language6" value="JavaScript" />
+                            <label for="javascript6">No</label><br />
+                        </div>
+                        <div>
+                            <label for="html">5. F - Foreign?</label><br />
+                            <input type="radio" id="css7" name="fav_language7" value="CSS" />
+                            <label for="css7">Yes</label><br />
+                            <input type="radio" id="javascript7" name="fav_language7" value="JavaScript" />
+                            <label for="javascript7">No</label><br />
+                        </div>
+                        <div class="input-field">
+                            <label class="block text-sm font-medium text-gray-700">If Yes, Name:</label>
+                            <input type="text" placeholder="Enter the name of account type" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3">
+                        </div>
+                    </div>
+                    <div class="project-summary">
+                        <span class="title">List of Asset | Office Equipments | Furniture Purchased within (12) Months:</span>
+                        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+                            <!-- First set of inputs -->
+                            <div class="input-field">
+                                <label for="asset1" class="block text-sm font-medium text-gray-700">Asset:</label>
+                                <input list="browsers" name="browser" id="asset1" type="text" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                                <datalist id="browsers">
+                                    <option value="Vehicles">
+                                    <option value="Sea Transport">
+                                    <option value="Motor Bike">
+                                    <option value="Offices">
+                                    <option value="Land">
+                                </datalist>
+                            </div>
+                            <div class="input-field">
+                                <label for="number1" class="block text-sm font-medium text-gray-700">Numbers:</label>
+                                <input type="number" placeholder="Enter figure" id="number1" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                            <div class="input-field">
+                                <label for="description1" class="block text-sm font-medium text-gray-700">Descriptions:</label>
+                                <input type="text" placeholder="Enter operational district name" id="description1" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+
+                            <!-- Second set of inputs -->
+                            <div class="input-field">
+                                <label for="asset2" class="block text-sm font-medium text-gray-700">Asset:</label>
+                                <input list="browsers" name="browser" id="asset2" type="text" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                            <div class="input-field">
+                                <label for="number2" class="block text-sm font-medium text-gray-700">Numbers:</label>
+                                <input type="number" placeholder="Enter figure" id="number2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                            <div class="input-field">
+                                <label for="description2" class="block text-sm font-medium text-gray-700">Descriptions:</label>
+                                <input type="text" placeholder="Enter operational district name" id="description2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                        </div>
+                        <div class="flex justify-between mt-4">
+                            <!-- File inputs remain unchanged -->
+                        </div>
+                    </div>
+
+                    <div class="project-summary mt-8">
+                        <span class="title">List of Vehicles | Motor Bikes | Sea Transports:</span>
+                        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+                            <!-- First set of inputs -->
+                            <div class="input-field">
+                                <label for="list1" class="block text-sm font-medium text-gray-700">List 1:</label>
+                                <input list="vehiclesList" name="browser" id="list1" type="text" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                                <datalist id="vehiclesList">
+                                    <option value="Vehicles">
+                                    <option value="Sea Transport">
+                                    <option value="Motor Bike">
+                                </datalist>
+                            </div>
+                            <div class="input-field">
+                                <label for="regNo1" class="block text-sm font-medium text-gray-700">Reg. No:</label>
+                                <input type="number" placeholder="Enter figure" id="regNo1" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                            <div class="input-field">
+                                <label for="registrationDate1" class="block text-sm font-medium text-gray-700">Date of Registration:</label>
+                                <input type="datetime-local" placeholder="Enter operational district name" id="registrationDate1" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+
+                            <!-- Second set of inputs -->
+                            <div class="input-field">
+                                <label for="list2" class="block text-sm font-medium text-gray-700">List 2:</label>
+                                <input list="vehiclesList" name="browser" id="list2" type="text" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                            <div class="input-field">
+                                <label for="regNo2" class="block text-sm font-medium text-gray-700">Reg. No:</label>
+                                <input type="number" placeholder="Enter figure" id="regNo2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                            <div class="input-field">
+                                <label for="registrationDate2" class="block text-sm font-medium text-gray-700">Date of Registration:</label>
+                                <input type="datetime-local" placeholder="Enter operational district name" id="registrationDate2" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                        </div>
+
+                        <!-- Additional renewal application requirements -->
+                        <div class="mt-8">
+                            <span class="title">All Renewal Application should be submitted with the following:</span>
+                            <div>
+                                <h3>1: Attach a copy of cover letter addressed to the Development Secretary:</h3>
+                                <label for="coverLetter">Select a file:</label>
+                                <input type="file" id="coverLetter" name="coverLetter"><br><br>
+                            </div>
+
+                            <div>
+                                <h3>2: Organization work / Activities Plan:</h3>
+                                <label for="orgPlan">Select files:</label>
+                                <input type="file" id="orgPlan" name="orgPlan" multiple><br><br>
+                            </div>
+
+                            <div>
+                                <h3>3: Project Implementation reports for 2022 - 2023:</h3>
+                                <label for="projReports">Select a file:</label>
+                                <input type="file" id="projReports" name="projReports"><br><br>
+                            </div>
+
+                            <div>
+                                <h3>4: Last audit account report on Sierra Leone operations (Accredited Audit Farm in Sierra Leone):</h3>
+                                <label for="auditReport">Select files:</label>
+                                <input type="file" id="auditReport" name="auditReport" multiple><br><br>
+                            </div>
+
+                            <div>
+                                <h3>5: Any specific external Audit undertaken at Door request:</h3>
+                                <label for="externalAudit">Select a file:</label>
+                                <input type="file" id="externalAudit" name="externalAudit"><br><br>
+                            </div>
+
+                            <div>
+                                <h3>6: Disaggregated Staff list stating Designation and status (National (MF) or Expatriate(MF)):</h3>
+                                <label for="staffList">Select files:</label>
+                                <input type="file" id="staffList" name="staffList" multiple><br><br>
+                            </div>
+                        </div>
+
+                        <!-- Additional field section -->
+                        <div class="field mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="input-field">
+                                <label for="registrationNumber" class="block text-sm font-medium text-gray-700">Registration Number:</label>
+                                <input type="number" placeholder="Enter registration number" id="registrationNumber" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                            <div class="input-field">
+                                <label for="activities" class="block text-sm font-medium text-gray-700">Activities:</label>
+                                <input type="text" placeholder="Enter activities" id="activities" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                            <div class="input-field">
+                                <label for="sectors" class="block text-sm font-medium text-gray-700">Sectors:</label>
+                                <input type="text" placeholder="Enter sectors" id="sectors" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                            <div class="input-field">
+                                <label for="district" class="block text-sm font-medium text-gray-700">District:</label>
+                                <input type="text" placeholder="Enter District" id="district" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                            <div class="input-field">
+                                <label for="chiefdom" class="block text-sm font-medium text-gray-700">Chiefdom:</label>
+                                <input type="text" placeholder="Enter Chiefdom" id="chiefdom" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                            <div class="input-field">
+                                <label for="townVillage" class="block text-sm font-medium text-gray-700">Town / Village:</label>
+                                <input type="text" placeholder="Enter Town / Village" id="townVillage" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                            <div class="input-field">
+                                <label for="startDate" class="block text-sm font-medium text-gray-700">Started Date:</label>
+                                <input type="date" placeholder="Enter date" id="startDate" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                            <div class="input-field">
+                                <label for="endDate" class="block text-sm font-medium text-gray-700">End Date:</label>
+                                <input type="date" placeholder="Enter end-date" id="endDate" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                            <div class="input-field">
+                                <label for="status" class="block text-sm font-medium text-gray-700">Status:</label>
+                                <input type="text" placeholder="Enter status" id="status" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-2">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="buttons mt-4">
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">
+                        <span class="btnText">Submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </section>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
